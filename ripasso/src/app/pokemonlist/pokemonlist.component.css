@@ -1,0 +1,52 @@
+/* Stile principale per il contenitore */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 25px;
+    background-color: #eef5ff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #d0e1ff;
+}
+
+/* Stile per i pulsanti */
+.button-18 {
+    background: linear-gradient(90deg, #ff6f61, #ff9472);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button-18:hover {
+    background: linear-gradient(90deg, #ff9472, #ff6f61);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+.button-18:active {
+    background: linear-gradient(90deg, #ff6f61, #ff3b3b);
+    transform: scale(0.95);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* Stile per dispositivi mobili */
+@media (max-width: 768px) {
+    .button-18 {
+        font-size: 14px;
+        padding: 10px 18px;
+    }
+
+    .button-container {
+        padding: 15px;
+        gap: 12px;
+    }
+}
